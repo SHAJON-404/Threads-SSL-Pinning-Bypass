@@ -1,9 +1,20 @@
-## Hi there 👋
+# 🔐 Threads-SSL-Pinning-Bypass
+📡 Intercept Threads network traffic on Android device/emulator
 
-I will be updating this repository as soon as possible, since I’m currently very busy.
+## 📌 Latest Tested App Version
+- 🎯 Instagram App version: **398.0.0.49.75**
+- 🏗️ Architecture: **arm64**, **armv7**, **x86**, **x86_64**
 
-If you need urgent assistance, feel free to reach out to me directly on Telegram:
+![main desktop](https://raw.githubusercontent.com/SHAJON-404/Threads-SSL-Pinning-Bypass/refs/heads/main/image/barcelona_398.jpg)
 
-📩 [t.me/darknessking999](https://t.me/darknessking999)
+## 💻 Requirements for Emulator
+1. 🖥️ Windows PC with Reqable / BurpSuit installed  
+2. 📲 Android emulator (Nox/LDPlayer)  
+3. ⚙️ Root access on emulator  
 
-Thank you for your patience and understanding! 🚀
+## 🆘 Need Help For Bypass? Contact Me
+<p align="left">
+  <a href="https://t.me/DarknessKing999" target="_blank">
+    <img src="https://img.shields.io/badge/💬_Chat_on_Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&labelColor=121212&color=26A5E4&logoWidth=20" alt="Telegram" style="border-radius: 8px;"/>
+  </a>
+</p>
