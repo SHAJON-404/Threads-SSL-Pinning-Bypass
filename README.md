@@ -2,10 +2,10 @@
 📡 Intercept Threads network traffic on Android device/emulator
 
 ## 📌 Latest Tested App Version
-- 🎯 Threads App version: **404.0.0.30.76**
+- 🎯 Threads App version: **406.0.0.53.80**
 - 🏗️ Architecture: **arm64**, **armv7**, **x86**, **x86_64**
 
-![main desktop](https://raw.githubusercontent.com/SHAJON-404/Threads-SSL-Pinning-Bypass/refs/heads/main/image/v404.jpg)
+![main desktop](https://raw.githubusercontent.com/SHAJON-404/Threads-SSL-Pinning-Bypass/refs/heads/main/image/v406.jpg)
 
 ## Requirements for Mobile Phone
  1. Rooted Andriod Phone [possible non root also]
