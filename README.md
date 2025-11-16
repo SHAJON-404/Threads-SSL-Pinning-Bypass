@@ -3,7 +3,7 @@
 
 ## 📌 Latest Tested App Version
 - 🎯 Threads App version: **406.0.0.53.80**
-- 🏗️ Architecture: **arm64**, **armv7**, **x86**, **x86_64**
+- 🏗️ Architecture: **arm64-v8a**
 
 ![main desktop](https://raw.githubusercontent.com/SHAJON-404/Threads-SSL-Pinning-Bypass/refs/heads/main/image/v406.jpg)
 
