@@ -2,7 +2,7 @@
 📡 Intercept Threads network traffic on Android device
 
 ## 📌 Latest Tested App Version
-- 🎯 Threads version: **416.0.0.1.66**
+- 🎯 Threads version: **416.0.0.44.66**
 - Architecture: **arm64-v8a**
 - For any inquiries, please contact me on Telegram [https://t.me/DarknessKing999](https://t.me/DarknessKing999)
 
