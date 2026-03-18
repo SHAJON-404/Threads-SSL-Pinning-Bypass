@@ -8,10 +8,11 @@
 - For any inquiries, please contact me on Telegram [https://t.me/DarknessKing999](https://t.me/DarknessKing999)
 
 ## 🎥 Evidence
- - Threads :
- ![Threads Android](https://raw.githubusercontent.com/shajon-dev/Threads-SSL-Pinning-Bypass/refs/heads/main/image/419.jpg)
- - Edits :
- ![Edits Android](https://raw.githubusercontent.com/shajon-dev/Threads-SSL-Pinning-Bypass/refs/heads/main/image/v417_edits.jpg)
+- **Threads:**
+![Threads Android](assets/419.jpg)
+
+- **Edits:**
+![Edits Android](assets/v417_edits.jpg)
 
 ## ✅ Other Apps
 1. [Threads iOS](https://github.com/shajon-dev/iOS-Threads-SSL-Pinning-Bypass)
@@ -28,7 +29,9 @@
 2. 🔄 ProxyPin or Reqable App for traffic capture
 
 ## 🎶 Setup Process
- - Install Modified APK & run traffic capture tool
+- Install Modified APK & run traffic capture tool
+
+**📂 Free Patched `libcoldstart.so` files are available in the `libs/` folder**
 
 ## Looking for leatest version modified apk? Contact me on Telegram
 <p align="left">
