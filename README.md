@@ -3,8 +3,8 @@
 
 ## 📌 Latest Bypass & Tested App Version
 - 🎯 Threads version: **421.0.0.50.67**
-- 🎯 Edits version: **417.0.0.53.76**
-- Architecture: **arm64-v8a**
+- 🎯 Edits version: **421.0.0.57.66**
+- Architecture: **arm64-v8a, X86_64**
 - For any inquiries, please contact me on Telegram [https://t.me/DarknessKing999](https://t.me/DarknessKing999)
 
 ## 🎥 Evidence
@@ -12,7 +12,7 @@
 ![Threads Android](assets/v421.jpg)
 
 - **Edits:**
-![Edits Android](assets/v417_edits.jpg)
+![Edits Android](assets/v421_edits.jpg)
 
 ## ✅ Other Apps
 1. [Threads iOS](https://github.com/shajon-dev/iOS-Threads-SSL-Pinning-Bypass)
@@ -46,7 +46,6 @@
 
 **📂 Free Patched `libstartup.so` files are available in the `libs/` folder**
 **📜 Consolidated login scripts are available in the `login.sh` file**
-
 
 ## Looking for leatest version patched `libstartup.so`? Contact me on Telegram
 <p align="left">
