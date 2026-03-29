@@ -51,8 +51,8 @@
     <tr>
       <td align="center">390.0.0.40.81</td>
       <td align="center">✅ Bypassed</td>
-      <td align="center"><a href="https://github.com/SHAJON-404/Threads-SSL-Pinning-Bypass/releases">Download Link</a></td>
-      <td align="center"><a href="https://github.com/SHAJON-404/Threads-SSL-Pinning-Bypass/releases">Download Link</a></td>
+      <td align="center"><a href="https://www.apkmirror.com/apk/instagram/threads-an-instagram-app/threads-390-0-0-40-81-release/threads-390-0-0-40-81-7-android-apk-download/">Download Link</a></td>
+      <td align="center"><a href="https://www.apkmirror.com/apk/instagram/threads-an-instagram-app/threads-390-0-0-40-81-release/threads-390-0-0-40-81-8-android-apk-download/">Download Link</a></td>
     </tr>
   </tbody>
 </table>
