@@ -1,10 +1,11 @@
 # 🔐 Threads-SSL-Pinning-Bypass
 📡 Intercept Threads network traffic on Android device
 
-## 📌 Latest Bypass & Tested App Version
-- 🎯 Threads version: **421.0.0.50.67**
-- 🎯 Edits version: **421.0.0.57.66**
+## 📌 Latest Bypassed and Tested App Details
+- Threads version: **421.0.0.50.67**
+- Edits version: **421.0.0.57.66**
 - Architecture: **arm64-v8a, X86_64**
+- Tools Used for test: [Mitmproxy](https://mitmproxy.org/), [Burp Suite](https://portswigger.net/burp), [HTTP Toolkit](https://httptoolkit.com/), [Reqable](https://reqable.com/).
 - For any inquiries, please contact me on Telegram [https://t.me/DarknessKing999](https://t.me/DarknessKing999)
 
 ## 🎥 Evidence
@@ -24,25 +25,37 @@
 7. [Instagram iOS](https://github.com/shajon-dev/iOS-Instagram-SSL-Pinning-Bypass)
 8. [Business Suite Android](https://github.com/shajon-dev/Meta-Business-Suit-SSL-Pinning-Bypass)
 
-## 📱 Requirements
-1. 🔓 Rooted Android phone or Emulator with root access (ldplayer9 / nox player)
-2. 🛠️ ADB tools installed on your computer
-3. 🔄 Mitmproxy or Reqable App for traffic capture
-
-## 🔧 Setup Process
- 1. 🔧 **Replace patched `libstartup.so`** with the original file at: `/data/data/com.instagram.barcelona/lib-compressed/libstartup.so`
- 2. 📲 **Use ADB command** to push the patched library:
-    ```
-    adb push D:\patched\libstartup.so /data/data/com.instagram.barcelona/lib-compressed/libstartup.so
-    ```
- 4. Use any packet capture tool to monitor Threads network traffic.
-
 ## 📦 For Demo - Download Official APKs
-**📥 Download Threads 390.0.0.40.81 from official sources:**
-
-- **🔧 arm64-v8a (64-bit):** [https://www.apkmirror.com/apk/instagram/threads-an-instagram-app/threads-390-0-0-40-81-release/threads-390-0-0-40-81-android-apk-download/](https://www.apkmirror.com/apk/instagram/threads-an-instagram-app/threads-390-0-0-40-81-release/threads-390-0-0-40-81-android-apk-download/)
-
-- **🔧 x86_64 (64-bit emulator):** [https://www.apkmirror.com/apk/instagram/threads-an-instagram-app/threads-390-0-0-40-81-release/threads-390-0-0-40-81-8-android-apk-download/](https://www.apkmirror.com/apk/instagram/threads-an-instagram-app/threads-390-0-0-40-81-release/threads-390-0-0-40-81-8-android-apk-download/)
+  - For any issues, contact me on Telegram. Read README.md carefully before use.
+  - Latest version is not free.
+<table width="100%">
+  <thead>
+    <tr>
+      <th rowspan="2" align="center">Package Name</th>
+      <th rowspan="2" align="center">Version</th>
+      <th rowspan="2" align="center">Status</th>
+      <th colspan="2" align="center">Download Link</th>
+    </tr>
+    <tr>
+      <th align="center">arm64-v8a</th>
+      <th align="center">X86_64</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2" align="center"><code>com.instagram.barcelona</code></td>
+      <td align="center">421.0.0.50.67</td>
+      <td align="center">✅ Bypassed</td>
+      <td colspan="2" align="center"><a href="https://t.me/DarknessKing999">Contact Telegram</a></td>
+    </tr>
+    <tr>
+      <td align="center">390.0.0.40.81</td>
+      <td align="center">✅ Bypassed</td>
+      <td align="center"><a href="https://github.com/SHAJON-404/Threads-SSL-Pinning-Bypass/releases">Download Link</a></td>
+      <td align="center"><a href="https://github.com/SHAJON-404/Threads-SSL-Pinning-Bypass/releases">Download Link</a></td>
+    </tr>
+  </tbody>
+</table>
 
 **📂 Free Patched `libstartup.so` files are available in the `libs/` folder**
 **📜 Consolidated login scripts are available in the `login.sh` file**
@@ -57,6 +70,18 @@ If this project helped you, consider buying me a coffee! ❤️
 | <table border="0" cellpadding="0" cellspacing="0"><tr><td><img src="https://cryptologos.cc/logos/ethereum-eth-logo.svg" width="20" /></td><td>&nbsp;<b>ANY Crypto</b></td></tr></table> | ETH / BSC | `0x22d4f314acbf6055b0a37df8df68f9cd40ba889a` |
 | <table border="0" cellpadding="0" cellspacing="0"><tr><td><img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg" width="20" /></td><td>&nbsp;<b>BTC</b></td></tr></table> | Bitcoin Network | `14RYf4pw7v2rtttLxRch2StjFzFAn9ycCE` |
 
+## 📱 Requirements
+1. 🔓 Rooted Android phone or Emulator with root access (LDPlayer 9 / Nox Player)
+2. 🛠️ ADB tools required for real devices only. Or use [MT Manager](https://mt2.cn/) to replace the .so file on the device.
+3. 🔄 Tools for traffic capture: [Mitmproxy](https://mitmproxy.org/), [Burp Suite](https://portswigger.net/burp), [HTTP Toolkit](https://httptoolkit.com/), [Reqable](https://reqable.com/).
+
+## 🔧 Setup Process
+ 1. 🔧 **Replace patched `libstartup.so`** with the original file at: `/data/data/com.instagram.barcelona/lib-compressed/libstartup.so`
+ 2. 📲 **Use ADB command** to push the patched library:
+    ```
+    adb push D:\patched\libstartup.so /data/data/com.instagram.barcelona/lib-compressed/libstartup.so
+    ```
+ 4. Use any packet capture tool to monitor Threads network traffic.
 
 ## Looking for leatest version patched `libstartup.so`? Contact me on Telegram
 <p align="left">
