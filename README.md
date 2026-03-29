@@ -4,7 +4,7 @@
 ## 📌 Latest Bypassed and Tested App Details
 - Threads version: **421.0.0.50.67**
 - Edits version: **421.0.0.57.66**
-- Architecture: **arm64-v8a, X86_64**
+- Architecture: **arm64-v8a, x86_64**
 - Tools Used for test: [Mitmproxy](https://mitmproxy.org/), [Burp Suite](https://portswigger.net/burp), [HTTP Toolkit](https://httptoolkit.com/), [Reqable](https://reqable.com/).
 - For any inquiries, please contact me on Telegram [https://t.me/DarknessKing999](https://t.me/DarknessKing999)
 
@@ -38,7 +38,7 @@
     </tr>
     <tr>
       <th align="center">arm64-v8a</th>
-      <th align="center">X86_64</th>
+      <th align="center">x86_64</th>
     </tr>
   </thead>
   <tbody>
@@ -79,7 +79,7 @@ If this project helped you, consider buying me a coffee! ❤️
  1. 🔧 **Replace patched `libstartup.so`** with the original file at: `/data/data/com.instagram.barcelona/lib-compressed/libstartup.so`
  2. 📲 **Use ADB command** to push the patched library:
     ```
-    adb push D:\patched\libstartup.so /data/data/com.instagram.barcelona/lib-compressed/libstartup.so
+    adb push [YOUR_libstartup.so_PATH] /data/data/com.instagram.barcelona/lib-compressed/libstartup.so
     ```
  4. Use any packet capture tool to monitor Threads network traffic.
 
