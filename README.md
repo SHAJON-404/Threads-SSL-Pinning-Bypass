@@ -2,18 +2,18 @@
 📡 Intercept Threads network traffic on Android device
 
 ## 📌 Latest Bypassed and Tested App Details
-- Threads version: **424.0.0.22.68**
-- Edits version: **423.1.0.49.66**
+- Threads version: **424.0.0.48.68**
+- Edits version: **424.0.0.49.64**
 - Architecture: **arm64-v8a, armeabi-v7a, x86, x86_64**
 - Tools Used for test: [Mitmproxy](https://mitmproxy.org/), [Burp Suite](https://portswigger.net/burp), [HTTP Toolkit](https://httptoolkit.com/), [Reqable](https://reqable.com/).
 - For any inquiries, please contact me on Telegram [https://t.me/DarknessKing999](https://t.me/DarknessKing999)
 
 ## 🎥 Evidence
 - **Threads:**
-![Threads Android](assets/v424b.jpg)
+![Threads Android](assets/v424.48.jpg)
 
 - **Edits:**
-![Edits Android](assets/v423.1_edits.jpg)
+![Edits Android](assets/v424_edits.jpg)
 
 ## ✅ Other Apps
 1. [Threads iOS](https://github.com/shajon-dev/iOS-Threads-SSL-Pinning-Bypass)
@@ -31,9 +31,11 @@
 <table width="100%">
   <thead>
     <tr>
+      <th rowspan="2" align="center">App</th>
       <th rowspan="2" align="center">Package Name</th>
       <th rowspan="2" align="center">Version</th>
       <th rowspan="2" align="center">Status</th>
+      <th rowspan="2" align="center">Working on Non root device</th>
       <th colspan="2" align="center">Download Link</th>
     </tr>
     <tr>
@@ -43,16 +45,34 @@
   </thead>
   <tbody>
     <tr>
+      <td rowspan="2" align="center"><b>Threads</b></td>
       <td rowspan="2" align="center"><code>com.instagram.barcelona</code></td>
-      <td align="center">424.0.0.22.68</td>
+      <td align="center">424.0.0.48.68</td>
       <td align="center">✅ Bypassed</td>
+      <td align="center">Yes</td>
       <td colspan="2" align="center"><a href="https://t.me/DarknessKing999">Contact Telegram</a></td>
     </tr>
     <tr>
       <td align="center">390.0.0.40.81</td>
       <td align="center">✅ Bypassed</td>
+      <td align="center">Yes</td>
       <td align="center"><a href="https://www.apkmirror.com/apk/instagram/threads-an-instagram-app/threads-390-0-0-40-81-release/threads-390-0-0-40-81-7-android-apk-download/">Download Link</a></td>
       <td align="center"><a href="https://www.apkmirror.com/apk/instagram/threads-an-instagram-app/threads-390-0-0-40-81-release/threads-390-0-0-40-81-8-android-apk-download/">Download Link</a></td>
+    </tr>
+    <tr>
+      <td rowspan="2" align="center"><b>Edits</b></td>
+      <td rowspan="2" align="center"><code>com.instagram.basel</code></td>
+      <td align="center">424.0.0.49.64</td>
+      <td align="center">✅ Bypassed</td>
+      <td align="center">Yes</td>
+      <td colspan="2" align="center"><a href="https://t.me/DarknessKing999">Contact Telegram</a></td>
+    </tr>
+    <tr>
+      <td align="center">390.0.0.47.108</td>
+      <td align="center">✅ Bypassed</td>
+      <td align="center">Yes</td>
+      <td align="center"><a href="https://www.apkmirror.com/apk/instagram/edits-by-instagram/edits-390-0-0-47-108-release/edits-390-0-0-47-108-2-android-apk-download/">Download Link</a></td>
+      <td align="center"><a href="https://www.apkmirror.com/apk/instagram/edits-by-instagram/edits-390-0-0-47-108-release/edits-390-0-0-47-108-4-android-apk-download/">Download Link</a></td>
     </tr>
   </tbody>
 </table>
