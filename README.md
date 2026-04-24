@@ -2,18 +2,18 @@
 📡 Intercept Threads network traffic on Android device
 
 ## 📌 Latest Bypassed and Tested App Details
-- Threads version: **425.0.0.50.59**
-- Edits version: **425.0.0.48.58**
+- Threads version: **427.0.0.2.72**
+- Edits version: **426.1.0.41.67**
 - Architecture: **arm64-v8a, armeabi-v7a, x86, x86_64**
 - Tools Used for test: [Mitmproxy](https://mitmproxy.org/), [Burp Suite](https://portswigger.net/burp), [HTTP Toolkit](https://httptoolkit.com/), [Reqable](https://reqable.com/).
 - For any inquiries, please contact me on Telegram [https://t.me/DarknessKing999](https://t.me/DarknessKing999)
 
 ## 🎥 Evidence
 - **Threads:**
-![Threads Android](assets/v425.jpg)
+![Threads Android](assets/v427.jpg)
 
 - **Edits:**
-![Edits Android](assets/v425_edits.jpg)
+![Edits Android](assets/v426_edits.jpg)
 
 ## ✅ Other Apps
 1. [Threads iOS](https://github.com/shajon-dev/iOS-Threads-SSL-Pinning-Bypass)
@@ -47,7 +47,7 @@
     <tr>
       <td rowspan="2" align="center"><b>Threads</b></td>
       <td rowspan="2" align="center"><code>com.instagram.barcelona</code></td>
-      <td align="center">425.0.0.50.59</td>
+      <td align="center">427.0.0.2.72</td>
       <td align="center">✅ Bypassed</td>
       <td align="center">Yes</td>
       <td colspan="2" align="center"><a href="https://t.me/DarknessKing999">Contact Telegram</a></td>
@@ -62,7 +62,7 @@
     <tr>
       <td rowspan="2" align="center"><b>Edits</b></td>
       <td rowspan="2" align="center"><code>com.instagram.basel</code></td>
-      <td align="center">425.0.0.48.58</td>
+      <td align="center">426.1.0.41.67</td>
       <td align="center">✅ Bypassed</td>
       <td align="center">Yes</td>
       <td colspan="2" align="center"><a href="https://t.me/DarknessKing999">Contact Telegram</a></td>
