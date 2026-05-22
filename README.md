@@ -49,13 +49,13 @@
       <td rowspan="2" align="center"><code>com.instagram.barcelona</code></td>
       <td align="center">430.0.0.0.60</td>
       <td align="center">✅ Bypassed</td>
-      <td align="center">Yes</td>
+      <td align="center">No</td>
       <td colspan="2" align="center"><a href="https://t.me/DarknessKing999">Contact Telegram</a></td>
     </tr>
     <tr>
       <td align="center">390.0.0.40.81</td>
       <td align="center">✅ Bypassed</td>
-      <td align="center">Yes</td>
+      <td align="center">No</td>
       <td align="center"><a href="https://www.apkmirror.com/apk/instagram/threads-an-instagram-app/threads-390-0-0-40-81-release/threads-390-0-0-40-81-7-android-apk-download/">Download Link</a></td>
       <td align="center"><a href="https://www.apkmirror.com/apk/instagram/threads-an-instagram-app/threads-390-0-0-40-81-release/threads-390-0-0-40-81-8-android-apk-download/">Download Link</a></td>
     </tr>
@@ -64,13 +64,13 @@
       <td rowspan="2" align="center"><code>com.instagram.basel</code></td>
       <td align="center">429.0.0.44.70</td>
       <td align="center">✅ Bypassed</td>
-      <td align="center">Yes</td>
+      <td align="center">No</td>
       <td colspan="2" align="center"><a href="https://t.me/DarknessKing999">Contact Telegram</a></td>
     </tr>
     <tr>
       <td align="center">390.0.0.47.108</td>
       <td align="center">✅ Bypassed</td>
-      <td align="center">Yes</td>
+      <td align="center">No</td>
       <td align="center"><a href="https://www.apkmirror.com/apk/instagram/edits-by-instagram/edits-390-0-0-47-108-release/edits-390-0-0-47-108-2-android-apk-download/">Download Link</a></td>
       <td align="center"><a href="https://www.apkmirror.com/apk/instagram/edits-by-instagram/edits-390-0-0-47-108-release/edits-390-0-0-47-108-4-android-apk-download/">Download Link</a></td>
     </tr>
