@@ -1,0 +1,400 @@
+'''
+
+Threads Login API
+
+'''
+
+
+# https://tools.shajon.dev/curl-converter | By SHAJON-404
+
+import requests
+import json
+
+url = 'https://i.instagram.com/api/v1/bloks/async_action/com.bloks.www.bloks.caa.login.async.send_login_request/'
+
+headers = {
+    "accept-language": "en-US",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "ig-intended-user-id": "0",
+    "priority": "u=3",
+    "x-bloks-is-layout-rtl": "false",
+    "x-bloks-prism-button-version": "CONTROL",
+    "x-bloks-prism-colors-enabled": "false",
+    "x-bloks-prism-extended-palette-gray": "false",
+    "x-bloks-prism-extended-palette-indigo": "true",
+    "x-bloks-prism-extended-palette-polish-enabled": "false",
+    "x-bloks-prism-extended-palette-red": "true",
+    "x-bloks-prism-extended-palette-rest-of-colors": "true",
+    "x-bloks-prism-font-enabled": "true",
+    "x-bloks-prism-indigo-link-version": "1",
+    "x-bloks-version-id": "a3b34fd1c15bf1583cf84148a27a84d94665c9d3757937616e30bc42350356aa",
+    "x-fb-client-ip": "True",
+    "x-fb-connection-type": "WIFI",
+    "x-fb-friendly-name": "IgApi: bloks/async_action/com.bloks.www.bloks.caa.login.async.send_login_request/",
+    "x-fb-request-analytics-tags": json.dumps({
+        "network_tags": {
+            "product": "3419628305025917",
+            "surface": "undefined",
+            "request_category": "api",
+            "purpose": "fetch",
+            "retry_attempt": "0",
+        },
+    }, separators=(',', ':')),
+    "x-fb-server-cluster": "True",
+    "x-ig-android-id": "android-c53ce29fd4336e4e",
+    "x-ig-app-id": "3419628305025917",
+    "x-ig-app-locale": "en_US",
+    "x-ig-attest-params": json.dumps({
+        "attestation": [
+            {
+                "version": 2,
+                "type": "keystore",
+                "errors": [
+                    0,
+                ],
+                "challenge_nonce": "9tMyjzp758XYWPhCS0LGc1KbriNmadZ2",
+                "signed_nonce": "MEYCIQDiJ1WQAt_VWAQkHB2yyWnWW8xUpdKGsGank_x-E1L_FAIhAIbaFvzxttbAang-82yhJfJSDosPT9x0fW86-tdVWcG1",
+                "key_hash": "ef133f43f3c0f999d8c142c4f316568b39c341b086b19d72cf80193db1d63c5d",
+                "certificate_chain": "-----BEGIN CERTIFICATE-----\nMIICqjCCAlCgAwIBAgIBATAKBggqhkjOPQQDAjA5MQwwCgYDVQQMDANURUUxKTAnBgNVBAUTIDIx\nYjE0MjFiOGM0NWY5MDYzN2YxMzUxYjg1OWFkMWJhMB4XDTI2MDgwMjE1MDMyM1oXDTM2MDgwMjE1\nMDMyM1owHzEdMBsGA1UEAxMUQW5kcm9pZCBLZXlzdG9yZSBLZXkwWTATBgcqhkjOPQIBBggqhkjO\nPQMBBwNCAASAOgDmG3ZTN8wF8BmUBFdHiwBtq2hTZDRTyYaVLaEc38ahWVPNfBlqOABpi+/0Eh3f\n15U2BzNNUb21E1c+z4TCo4IBYTCCAV0wDwYDVR0PAQH/BAUDAweAADCCAUgGCisGAQQB1nkCAREE\nggE4MIIBNAIBZAoBAQIBZAoBAQQgYlZwUk54YWYzT3Y1WkRvdVdLODRKQWx0SUhZa1Nqc3cEADBb\nv4U9CAIGAZ/DAEkMv4VFSwRJMEcxITAfBBdjb20uaW5zdGFncmFtLmJhcmNlbG9uYQIEHnbeCzEi\nBCBTZ1cLrUiNjaag+reNl2ahpMI8PHD6wK0ukcjwvVi0MjCBpKEIMQYCAQICAQOiAwIBA6MEAgIB\nAKUFMQMCAQSqAwIBAb+DdwIFAL+FPgMCAQC/hUBMMEoEICLeOZRTIZb2HAOekCYNeKk6TFc2LH54\nm+koA26At3yMAQH/CgEABCB3S+6fuI7ztqjHp31XvSgkLQCwAjBOLEzaNN4biQ0e5b+FQQUCAwIi\n4L+FQgUCAwMXb7+FTgYCBAE1J2G/hU8GAgQBNSdhMAoGCCqGSM49BAMCA0gAMEUCIQCGF6UwcndA\n1oBYeyD49WfQ7OcYfGt2SyxfwFM8XNktsAIgOPjStdXNzTYA5TNK9h3N8aW4VRlIN2MAnOdIpkOD\nhYo=\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIB8jCCAXmgAwIBAgIQYlPVGNNL3e8p/E9N+V7Q3TAKBggqhkjOPQQDAjA5MQwwCgYDVQQMDANU\nRUUxKTAnBgNVBAUTIDhjMmI3NWE1ZWRmZDMwMmQ2ODY4NmE3OTlmNzVhMjZmMB4XDTIwMDEwNzIw\nNDQyOFoXDTMwMDEwNDIwNDQyOFowOTEMMAoGA1UEDAwDVEVFMSkwJwYDVQQFEyAyMWIxNDIxYjhj\nNDVmOTA2MzdmMTM1MWI4NTlhZDFiYTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABBuSrZHvd0l9\n5BOYJScn1Wf+533457zvWuTBTs+E86Hq5VBg5y9EHoDqjX4OzLZls57IrVEfc/97ABZ9JyAP4XKj\nYzBhMB0GA1UdDgQWBBREJzaSycHkXVRIO+jeQ34WyIogDzAfBgNVHSMEGDAWgBQaaV4GJt0nU9ad\nJzsXVcokQPrb2zAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwICBDAKBggqhkjOPQQDAgNn\nADBkAjBSQeo3CsaANw4FE9FGQAuq2qgEaykd10TKTHGMDFk2V/CuKd2fVdnE5Q9/qQX+1ccCMBw1\n9d1XMQCvH3K3UkC7bPfCPtohev8wglCDXecvRZayQ7lsZVt7N8N+GH/8ry4kng==\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIDkzCCAXugAwIBAgIQR3MehuTP7Ng4yxyddZmaDzANBgkqhkiG9w0BAQsFADAbMRkwFwYDVQQF\nExBmOTIwMDllODUzYjZiMDQ1MB4XDTIwMDEwNzIwNDMyN1oXDTMwMDEwNDIwNDMyN1owOTEMMAoG\nA1UEDAwDVEVFMSkwJwYDVQQFEyA4YzJiNzVhNWVkZmQzMDJkNjg2ODZhNzk5Zjc1YTI2ZjB2MBAG\nByqGSM49AgEGBSuBBAAiA2IABNE/SEkiCznBEcuTYIxlBCy7f5sY81ZScvoOO7VfqmVraLP1KYkg\nQzxnSqfqp2JlKxcNQnHjKL756Y/gbmOp/S99uggOgKxC7Fo8R7VsNvr9sLELm3GcjXHbjU6YWSpX\n+KNjMGEwHQYDVR0OBBYEFBppXgYm3SdT1p0nOxdVyiRA+tvbMB8GA1UdIwQYMBaAFDZh4QB8iAUJ\nUYtEbEf/GkzJ6k8SMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgIEMA0GCSqGSIb3DQEB\nCwUAA4ICAQB7/bLXqh5H8sxNS5bHN8KC4ylHIKWRcX2qiNxGqPHEdjB4OLzampVerBrHaZto7tVe\nlF/Gny5piVgvCHlJKA0MQEJlCJXlKk6ZBPeY2o2+JVQUDtop84ShIvO/S+8UfcdYifYbuA+zd4k3\nJE1hjJTd3/O9Vi3NiorOUcmxZCGcFScEz0n0Tftq46WlzlvD4ew+Sh5cHSTYNxWgZVPka/GfzjHn\nmCCjAWXUgLmYJf3BHLp1P5wuph2bwXt+onrhXAaNrVmKz27XT52n44hUfeOOyJgsGNLct2NVmiHY\ncknWkcStPUzeJHJYz5IxxfGMxXjAeqi3ZojeWicLEPJ8Z0WyYR9KANBkTB00SnBfEqs2yliStdRv\nC1dxhOlXGL4EjGvZ61a065uVKCTT9iBxI6SeNvUnfDOZp2viaGhHKm6uC8hsr19Y9pDjK6MG36If\n1xUHjBSU6SQA2/462E4lo++TQOCIm7DaKwt/S6Ui9WICFrngDryvRvrMSpOd5K9vJEXPZMpyT6VD\nOY5ntbNQmHj01hpYBYZXbAbzl62SBY0w7NjUq3qE8hdm7SOas5Ph8Kk9SQGWmDdnZuppbiK7f7ab\nRRBmtNNN6z2gjDCQYhXQAQEBa27Tec3IGk+Vwzvp4CH42Yhpc1rpwl92AOQGX5S1446cYMkLZBda\n6O2b73AnZQ==\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIFHDCCAwSgAwIBAgIJAPHBcqaZ6vUdMA0GCSqGSIb3DQEBCwUAMBsxGTAXBgNVBAUTEGY5MjAw\nOWU4NTNiNmIwNDUwHhcNMjIwMzIwMTgwNzQ4WhcNNDIwMzE1MTgwNzQ4WjAbMRkwFwYDVQQFExBm\nOTIwMDllODUzYjZiMDQ1MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAr7bHgiuxpwHs\nK7Qui8xUFmOr75gvMsd/dTEDDJdSSxtf6An7xyqpRR90PL2abxM1dEqlXnf2tqw1Ne4Xwl5jlRfd\nnJLmN0pTy/4lj4/7tv0Sk3iiKkypnEUtR6WfMgH0QZfKHM1+di+y9TFRtv6y//0rb+T+W8a9nsNL\n/ggjnar86461qO0rOs2cXjp3kOG1FEJ5MVmFmBGtnrKpa73XpXyTqRxB/M0n1n/W9nGqC4FSYa04\nT6N5RIZGBN2z2MT5IKGbFlbC8UrW0DxW7AYImQQcHtGl/m00QLVWutHQoVJYnFPlXTcHYvASLu+R\nhhsbDmxMgJJ0mcDpvsC4PjvB+TxywElgS70vE0XmLD+OJtvsBslHZvPBKCOdT0MS+tgSOIfga+z1\nZ1g7+DVagf7quvmag8jfPioyKvxnK/EgsTUVi2ghzq8wm27ud/mIM7AY2qEORR8Go3TVB4HzWQgp\nZrt3i5MIlCaY504LzSRiigHCzAPlHws+W0rB5N+er5/2pJKnfBSDiCiFAVtCLOZ7gLiMm0jhO2B6\ntUXHI/+MRPjy02i59lINMRRev56GKtcd9qO/0kUJWdZTdA2XoS82ixPvZtXQpUpuL12ab+9EaDK8\nZ4RHJYYfCT3Q5vNAXaiWQ+8PTWm2QgBR/bkwSWc+NpUFgNPN9PvQi8WEg5UmAGMCAwEAAaNjMGEw\nHQYDVR0OBBYEFDZh4QB8iAUJUYtEbEf/GkzJ6k8SMB8GA1UdIwQYMBaAFDZh4QB8iAUJUYtEbEf/\nGkzJ6k8SMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgIEMA0GCSqGSIb3DQEBCwUAA4IC\nAQB8cMqTllHc8U+qCrOlg3H7174lmaCsbo/bJ0C17JEgMLb4kvrqsXZs01U3mB/qABg/1t5Pd5AO\nRHARs1hhqGICW/nKMav574f9rZN4PC2ZlufGXb7sIdJpGiO9ctRhiLuYuly10JccUZGEHpHSYM2G\ntkgYbZba6lsCPYAAP83cyDV+1aOkTf1RCp/lM0PKvmxYN10RYsK631jrleGdcdkxoSK//mSQbgcW\nnmAEZrzHoF1/0gso1HZgIn0YLzVhLSA/iXCX4QT2h3J5z3znluKG1nv8NQdxei2DIIhASWfu804C\nA96cQKTTlaae2fweqXjdN1/v2nqOhngNyz1361mFmr4XmaKH/ItTwOe72NI9ZcwS1lVaCvsIkTDC\nEXdm9rCNPAY10iTunIHFXRh+7KPzlHGewCq/8TOohBRn0/NNfh7uRslOSZ/xKbN9tMBtw37Z8d2v\nvnXq/YWdsm1+JLVwn6yYD/yacNJBlwpddla8eaVMjsF6nBnIgQOf9zKSe06nSTqvgwUHosgOECZJ\nZ1EuzbH4yswbt02tKtKEFhx+v+OTge/06V+jGsqTWLsfrOCNLuA8H++z+pUENmpqnnHovaI47gC+\nTNpkgYGkkBT6B/m/U01BuOBBTzhIlMEZq9qkDWuM2cA5kW5V3FJUcfHnw1IdYIg2Wxg7yHcQZemF\nQg==\n-----END CERTIFICATE-----",
+            },
+        ],
+    }, separators=(',', ':')),
+    "x-ig-bandwidth-speed-kbps": "-1.000",
+    "x-ig-bandwidth-totalbytes-b": "0",
+    "x-ig-bandwidth-totaltime-ms": "0",
+    "x-ig-client-endpoint": "com.bloks.www.caa.login.home_template:com.bloks.www.caa.login.home_template",
+    "x-ig-capabilities": "3brTv10=",
+    "x-ig-connection-type": "WIFI",
+    "x-ig-device-id": "1b4a1c99-c663-4a13-ac34-0622a139c201",
+    "x-ig-device-locale": "en_US",
+    "x-ig-family-device-id": "e8ea88fd-1ddc-4ea5-8e8b-e63b7e1c8018",
+    "x-ig-is-foldable": "false",
+    "x-ig-mapped-locale": "en_US",
+    "x-ig-timezone-offset": "21600",
+    "x-ig-www-claim": "0",
+    "x-mid": "am9cNAABAAHANXscEyoqzeXuQtpE",
+    "x-pigeon-rawclienttime": "1785683021.368",
+    "x-pigeon-session-id": "UFS-f702e0f9-0c96-44e5-a2d3-1bea39ac4058-0",
+    "x-tigon-is-retry": "False",
+    "user-agent": "Barcelona 441.0.0.31.81 Android (34/14; 436dpi; 1080x2400; TECNO; TECNO CK7n; TECNO-CK7n; mt6789; en_US; 1030456058)",
+    "x-fb-conn-uuid-client": "dce10481f6bac14f3f17c3712d7ff7bf",
+    "x-fb-http-engine": "Tigon/MNS/TCP",
+}
+
+data = {
+    "params": json.dumps({
+        "client_input_params": {
+            "blocked_uids": [],
+            "aac": "",
+            "sim_phones": [],
+            "aymh_accounts": [
+                {
+                    "profiles": {
+                        "id": {
+                            "is_derived": 0,
+                            "credentials": [],
+                            "account_center_id": "",
+                            "profile_picture_url": "",
+                            "small_profile_picture_url": None,
+                            "notification_count": 0,
+                            "token": "",
+                            "last_access_time": 0,
+                            "has_smartlock": 0,
+                            "credential_type": "none",
+                            "password": "",
+                            "from_accurate_privacy_result": 0,
+                            "dbln_validated": 0,
+                            "user_id": "",
+                            "name": "",
+                            "nta_eligibility_reason": None,
+                            "username": "",
+                            "account_source": "",
+                        },
+                    },
+                    "id": "",
+                },
+            ],
+            "network_bssid": None,
+            "secure_family_device_id": "",
+            "has_granted_read_contacts_permissions": 0,
+            "auth_secure_device_id": "",
+            "has_whatsapp_installed": 1,
+            "password": "#PWD_INSTAGRAM:4:1785683021:AV7sDALyMnRn9c8JJUQAAXgICWj2bpluySVFc20cVlWfYc5qavGCfF0/m3bG9Q9LXyHWwzbC/zCoLEh/HEljUhAlsCuJbxwrp2Mq8HcjWMKsmHhjMMSp0jYh/OcGAiGxtunCNfO9MdEWiFgPWIZ5ycs9KgycSp3iBKEx36R7Nq0qO7HswB/VJeJcLEPqKBiBnOi1RquY5CNkMuvjmDgbGp+Uo0+2bUKYg4dv8O4q6hYQPwG9d1LLfU1U1HlihWs6npMXd7Koowyb7f2zvkNLkuSmPbmAhdqdN6U0lDu4uBiSj/YS911ez3mfe/WSoRJbzvLmRzxjQfJWGDhPgeZy6X2woIkXfNQAuANO65wpYKhwQacBvJyy7x0HONA5PhShT8XHXRdBolHArEtd",
+            "sso_token_map_json_string": "",
+            "block_store_machine_id": "",
+            "cloud_trust_token": None,
+            "event_flow": "login_manual",
+            "password_contains_non_ascii": "false",
+            "client_known_key_hash": "",
+            "sso_accounts_auth_data": [],
+            "encrypted_msisdn": "",
+            "has_granted_read_phone_permissions": 0,
+            "app_manager_id": "",
+            "device_id": "android-c53ce29fd4336e4e",
+            "zero_balance_state": "",
+            "login_attempt_count": 1,
+            "machine_id": "am9cNAABAAHANXscEyoqzeXuQtpE",
+            "accounts_list": [],
+            "gms_incoming_call_retriever_eligibility": "client_not_supported",
+            "family_device_id": "e8ea88fd-1ddc-4ea5-8e8b-e63b7e1c8018",
+            "fb_ig_device_id": [],
+            "device_emails": [],
+            "try_num": 1,
+            "lois_settings": {
+                "lois_token": "",
+            },
+            "event_step": "home_page",
+            "headers_infra_flow_id": "",
+            "openid_tokens": {},
+            "contact_point": "x.shajon",
+        },
+        "server_params": {
+            "should_trigger_override_login_2fa_action": 0,
+            "is_from_logged_out": 0,
+            "should_trigger_override_login_success_action": 0,
+            "login_credential_type": "none",
+            "server_login_source": "login",
+            "waterfall_id": None,
+            "two_step_login_type": "one_step_login",
+            "login_source": "Login",
+            "is_platform_login": 0,
+            "INTERNAL__latency_qpl_marker_id": 36707139,
+            "is_from_aymh": 0,
+            "offline_experiment_group": None,
+            "is_from_landing_page": 0,
+            "left_nav_button_action": "NONE",
+            "password_text_input_id": "xjzvjp:57",
+            "is_from_empty_password": 0,
+            "is_from_msplit_fallback": 0,
+            "ar_event_source": "login_home_page",
+            "username_text_input_id": "xjzvjp:56",
+            "layered_homepage_experiment_group": None,
+            "should_show_nested_nta_from_aymh": 1,
+            "device_id": "1b4a1c99-c663-4a13-ac34-0622a139c201",
+            "login_surface": "unknown",
+            "INTERNAL__latency_qpl_instance_id": 202897035700388,
+            "reg_flow_source": "threads_welcome_screen",
+            "is_caa_perf_enabled": 1,
+            "credential_type": "password",
+            "is_from_password_entry_page": 0,
+            "caller": "gslr",
+            "family_device_id": "e8ea88fd-1ddc-4ea5-8e8b-e63b7e1c8018",
+            "is_from_assistive_id": 0,
+            "access_flow_version": "pre_mt_behavior",
+            "is_from_logged_in_switcher": 0,
+        },
+    }, separators=(',', ':')),
+    "bk_client_context": json.dumps({
+        "bloks_version": "a3b34fd1c15bf1583cf84148a27a84d94665c9d3757937616e30bc42350356aa",
+        "styles_id": "instagram",
+        "theme_params": [
+            {
+                "value": [
+                    "three_neutral_gray",
+                ],
+                "design_system_name": "XMDS",
+            },
+        ],
+    }, separators=(',', ':')),
+    "bloks_versioning_id": "a3b34fd1c15bf1583cf84148a27a84d94665c9d3757937616e30bc42350356aa",
+}
+
+response = requests.post(url, headers=headers, data=data)
+print(f"Response Status Code: {response.status_code}")
+print(f"Response Body: {response.text}")
+
+'''
+
+Edits Login API
+
+'''
+
+# https://tools.shajon.dev/curl-converter | By SHAJON-404
+
+import requests
+import json
+
+url = 'https://i.instagram.com/api/v1/bloks/async_action/com.bloks.www.bloks.caa.login.async.send_login_request/'
+
+headers = {
+    "accept-language": "en-US",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "ig-intended-user-id": "0",
+    "priority": "u=3",
+    "x-bloks-is-layout-rtl": "false",
+    "x-bloks-prism-button-version": "CONTROL",
+    "x-bloks-prism-colors-enabled": "false",
+    "x-bloks-prism-extended-palette-gray": "false",
+    "x-bloks-prism-extended-palette-indigo": "true",
+    "x-bloks-prism-extended-palette-polish-enabled": "false",
+    "x-bloks-prism-extended-palette-red": "true",
+    "x-bloks-prism-extended-palette-rest-of-colors": "true",
+    "x-bloks-prism-font-enabled": "true",
+    "x-bloks-prism-indigo-link-version": "1",
+    "x-bloks-version-id": "125eda3db0a4b040a0be5680724fc52524b62cee3cd34af9164a6a2434c26f39",
+    "x-fb-client-ip": "True",
+    "x-fb-connection-type": "WIFI",
+    "x-fb-friendly-name": "IgApi: bloks/async_action/com.bloks.www.bloks.caa.login.async.send_login_request/",
+    "x-fb-request-analytics-tags": json.dumps({
+        "network_tags": {
+            "product": "954255173121948",
+            "surface": "undefined",
+            "request_category": "api",
+            "purpose": "fetch",
+            "retry_attempt": "0",
+        },
+    }, separators=(',', ':')),
+    "x-fb-server-cluster": "True",
+    "x-ig-android-id": "android-c53ce29fd4336e4e",
+    "x-ig-app-id": "954255173121948",
+    "x-ig-app-locale": "en_US",
+    "x-ig-attest-params": json.dumps({
+        "attestation": [
+            {
+                "version": 2,
+                "type": "keystore",
+                "errors": [
+                    0,
+                ],
+                "challenge_nonce": "mjNRhAwgF3z8C5GPbEaIQOf2nxoMvLyu",
+                "signed_nonce": "MEYCIQCcTm8V5sP1LBkUGOqzVi9GZ-1n11wLvYCBl1spYbhmagIhAKdNhKra0mnFzcuBBmUo6bnTH-QbVFwbvKjPLxV6GFf2",
+                "key_hash": "98829aa3bb2ce176b629dfebd9e505283e89c3ce892b6d9fc40d33c9c84e8785",
+                "certificate_chain": "-----BEGIN CERTIFICATE-----\nMIICpjCCAkygAwIBAgIBATAKBggqhkjOPQQDAjA5MQwwCgYDVQQMDANURUUxKTAnBgNVBAUTIDIx\nYjE0MjFiOGM0NWY5MDYzN2YxMzUxYjg1OWFkMWJhMB4XDTI2MDgwMjE0NTUzNFoXDTM2MDgwMjE0\nNTUzNFowHzEdMBsGA1UEAxMUQW5kcm9pZCBLZXlzdG9yZSBLZXkwWTATBgcqhkjOPQIBBggqhkjO\nPQMBBwNCAASQPgNxWp+UYbU6+KPdRrLRiGVDs0hN/6nS0tL/jEthxR7D2iCHxCZWpZ2asAguyEwf\nhib1fRTmBD0i3YujqYlRo4IBXTCCAVkwDwYDVR0PAQH/BAUDAweAADCCAUQGCisGAQQB1nkCAREE\nggE0MIIBMAIBZAoBAQIBZAoBAQQgc3pGTER4cDMxbndnNnFodk5HZGJ5ZVVZMlJBbDQwU2sEADBX\nv4U9CAIGAZ/C+SD9v4VFRwRFMEMxHTAbBBNjb20uaW5zdGFncmFtLmJhc2VsAgQzgSM9MSIEIFNn\nVwutSI2NpqD6t42XZqGkwjw8cPrArS6RyPC9WLQyMIGkoQgxBgIBAgIBA6IDAgEDowQCAgEApQUx\nAwIBBKoDAgEBv4N3AgUAv4U+AwIBAL+FQEwwSgQgIt45lFMhlvYcA56QJg14qTpMVzYsfnib6SgD\nboC3fIwBAf8KAQAEIHdL7p+4jvO2qMenfVe9KCQtALACME4sTNo03huJDR7lv4VBBQIDAiLgv4VC\nBQIDAxdvv4VOBgIEATUnYb+FTwYCBAE1J2EwCgYIKoZIzj0EAwIDSAAwRQIgMMn09cHelqz1FoqH\nHgKT+96ZdK5kjaomTWGMsxfEJ20CIQD0Ndrvw3z9tWs+gzAlFqLuwS7pWcgPhJFiJmmVY03vQQ==\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIB8jCCAXmgAwIBAgIQYlPVGNNL3e8p/E9N+V7Q3TAKBggqhkjOPQQDAjA5MQwwCgYDVQQMDANU\nRUUxKTAnBgNVBAUTIDhjMmI3NWE1ZWRmZDMwMmQ2ODY4NmE3OTlmNzVhMjZmMB4XDTIwMDEwNzIw\nNDQyOFoXDTMwMDEwNDIwNDQyOFowOTEMMAoGA1UEDAwDVEVFMSkwJwYDVQQFEyAyMWIxNDIxYjhj\nNDVmOTA2MzdmMTM1MWI4NTlhZDFiYTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABBuSrZHvd0l9\n5BOYJScn1Wf+533457zvWuTBTs+E86Hq5VBg5y9EHoDqjX4OzLZls57IrVEfc/97ABZ9JyAP4XKj\nYzBhMB0GA1UdDgQWBBREJzaSycHkXVRIO+jeQ34WyIogDzAfBgNVHSMEGDAWgBQaaV4GJt0nU9ad\nJzsXVcokQPrb2zAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwICBDAKBggqhkjOPQQDAgNn\nADBkAjBSQeo3CsaANw4FE9FGQAuq2qgEaykd10TKTHGMDFk2V/CuKd2fVdnE5Q9/qQX+1ccCMBw1\n9d1XMQCvH3K3UkC7bPfCPtohev8wglCDXecvRZayQ7lsZVt7N8N+GH/8ry4kng==\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIDkzCCAXugAwIBAgIQR3MehuTP7Ng4yxyddZmaDzANBgkqhkiG9w0BAQsFADAbMRkwFwYDVQQF\nExBmOTIwMDllODUzYjZiMDQ1MB4XDTIwMDEwNzIwNDMyN1oXDTMwMDEwNDIwNDMyN1owOTEMMAoG\nA1UEDAwDVEVFMSkwJwYDVQQFEyA4YzJiNzVhNWVkZmQzMDJkNjg2ODZhNzk5Zjc1YTI2ZjB2MBAG\nByqGSM49AgEGBSuBBAAiA2IABNE/SEkiCznBEcuTYIxlBCy7f5sY81ZScvoOO7VfqmVraLP1KYkg\nQzxnSqfqp2JlKxcNQnHjKL756Y/gbmOp/S99uggOgKxC7Fo8R7VsNvr9sLELm3GcjXHbjU6YWSpX\n+KNjMGEwHQYDVR0OBBYEFBppXgYm3SdT1p0nOxdVyiRA+tvbMB8GA1UdIwQYMBaAFDZh4QB8iAUJ\nUYtEbEf/GkzJ6k8SMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgIEMA0GCSqGSIb3DQEB\nCwUAA4ICAQB7/bLXqh5H8sxNS5bHN8KC4ylHIKWRcX2qiNxGqPHEdjB4OLzampVerBrHaZto7tVe\nlF/Gny5piVgvCHlJKA0MQEJlCJXlKk6ZBPeY2o2+JVQUDtop84ShIvO/S+8UfcdYifYbuA+zd4k3\nJE1hjJTd3/O9Vi3NiorOUcmxZCGcFScEz0n0Tftq46WlzlvD4ew+Sh5cHSTYNxWgZVPka/GfzjHn\nmCCjAWXUgLmYJf3BHLp1P5wuph2bwXt+onrhXAaNrVmKz27XT52n44hUfeOOyJgsGNLct2NVmiHY\ncknWkcStPUzeJHJYz5IxxfGMxXjAeqi3ZojeWicLEPJ8Z0WyYR9KANBkTB00SnBfEqs2yliStdRv\nC1dxhOlXGL4EjGvZ61a065uVKCTT9iBxI6SeNvUnfDOZp2viaGhHKm6uC8hsr19Y9pDjK6MG36If\n1xUHjBSU6SQA2/462E4lo++TQOCIm7DaKwt/S6Ui9WICFrngDryvRvrMSpOd5K9vJEXPZMpyT6VD\nOY5ntbNQmHj01hpYBYZXbAbzl62SBY0w7NjUq3qE8hdm7SOas5Ph8Kk9SQGWmDdnZuppbiK7f7ab\nRRBmtNNN6z2gjDCQYhXQAQEBa27Tec3IGk+Vwzvp4CH42Yhpc1rpwl92AOQGX5S1446cYMkLZBda\n6O2b73AnZQ==\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIFHDCCAwSgAwIBAgIJAPHBcqaZ6vUdMA0GCSqGSIb3DQEBCwUAMBsxGTAXBgNVBAUTEGY5MjAw\nOWU4NTNiNmIwNDUwHhcNMjIwMzIwMTgwNzQ4WhcNNDIwMzE1MTgwNzQ4WjAbMRkwFwYDVQQFExBm\nOTIwMDllODUzYjZiMDQ1MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAr7bHgiuxpwHs\nK7Qui8xUFmOr75gvMsd/dTEDDJdSSxtf6An7xyqpRR90PL2abxM1dEqlXnf2tqw1Ne4Xwl5jlRfd\nnJLmN0pTy/4lj4/7tv0Sk3iiKkypnEUtR6WfMgH0QZfKHM1+di+y9TFRtv6y//0rb+T+W8a9nsNL\n/ggjnar86461qO0rOs2cXjp3kOG1FEJ5MVmFmBGtnrKpa73XpXyTqRxB/M0n1n/W9nGqC4FSYa04\nT6N5RIZGBN2z2MT5IKGbFlbC8UrW0DxW7AYImQQcHtGl/m00QLVWutHQoVJYnFPlXTcHYvASLu+R\nhhsbDmxMgJJ0mcDpvsC4PjvB+TxywElgS70vE0XmLD+OJtvsBslHZvPBKCOdT0MS+tgSOIfga+z1\nZ1g7+DVagf7quvmag8jfPioyKvxnK/EgsTUVi2ghzq8wm27ud/mIM7AY2qEORR8Go3TVB4HzWQgp\nZrt3i5MIlCaY504LzSRiigHCzAPlHws+W0rB5N+er5/2pJKnfBSDiCiFAVtCLOZ7gLiMm0jhO2B6\ntUXHI/+MRPjy02i59lINMRRev56GKtcd9qO/0kUJWdZTdA2XoS82ixPvZtXQpUpuL12ab+9EaDK8\nZ4RHJYYfCT3Q5vNAXaiWQ+8PTWm2QgBR/bkwSWc+NpUFgNPN9PvQi8WEg5UmAGMCAwEAAaNjMGEw\nHQYDVR0OBBYEFDZh4QB8iAUJUYtEbEf/GkzJ6k8SMB8GA1UdIwQYMBaAFDZh4QB8iAUJUYtEbEf/\nGkzJ6k8SMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgIEMA0GCSqGSIb3DQEBCwUAA4IC\nAQB8cMqTllHc8U+qCrOlg3H7174lmaCsbo/bJ0C17JEgMLb4kvrqsXZs01U3mB/qABg/1t5Pd5AO\nRHARs1hhqGICW/nKMav574f9rZN4PC2ZlufGXb7sIdJpGiO9ctRhiLuYuly10JccUZGEHpHSYM2G\ntkgYbZba6lsCPYAAP83cyDV+1aOkTf1RCp/lM0PKvmxYN10RYsK631jrleGdcdkxoSK//mSQbgcW\nnmAEZrzHoF1/0gso1HZgIn0YLzVhLSA/iXCX4QT2h3J5z3znluKG1nv8NQdxei2DIIhASWfu804C\nA96cQKTTlaae2fweqXjdN1/v2nqOhngNyz1361mFmr4XmaKH/ItTwOe72NI9ZcwS1lVaCvsIkTDC\nEXdm9rCNPAY10iTunIHFXRh+7KPzlHGewCq/8TOohBRn0/NNfh7uRslOSZ/xKbN9tMBtw37Z8d2v\nvnXq/YWdsm1+JLVwn6yYD/yacNJBlwpddla8eaVMjsF6nBnIgQOf9zKSe06nSTqvgwUHosgOECZJ\nZ1EuzbH4yswbt02tKtKEFhx+v+OTge/06V+jGsqTWLsfrOCNLuA8H++z+pUENmpqnnHovaI47gC+\nTNpkgYGkkBT6B/m/U01BuOBBTzhIlMEZq9qkDWuM2cA5kW5V3FJUcfHnw1IdYIg2Wxg7yHcQZemF\nQg==\n-----END CERTIFICATE-----",
+            },
+        ],
+    }, separators=(',', ':')),
+    "x-ig-bandwidth-speed-kbps": "-1.000",
+    "x-ig-bandwidth-totalbytes-b": "0",
+    "x-ig-bandwidth-totaltime-ms": "0",
+    "x-ig-client-endpoint": "com.bloks.www.caa.login.home_template:com.bloks.www.caa.login.home_template",
+    "x-ig-capabilities": "3brTv10=",
+    "x-ig-connection-type": "WIFI",
+    "x-ig-device-id": "baed1855-a663-4fed-b1d4-4d443c195e26",
+    "x-ig-device-locale": "en_US",
+    "x-ig-family-device-id": "e8ea88fd-1ddc-4ea5-8e8b-e63b7e1c8018",
+    "x-ig-is-foldable": "false",
+    "x-ig-mapped-locale": "en_US",
+    "x-ig-timezone-offset": "21600",
+    "x-ig-www-claim": "0",
+    "x-mid": "am9Z3QABAAFa6Yss9gxhKKuZ_v45",
+    "x-pigeon-rawclienttime": "1785682555.487",
+    "x-pigeon-session-id": "UFS-c27064a7-5bf7-400b-8672-31203f0fae16-0",
+    "x-tigon-is-retry": "False",
+    "user-agent": "Basel 441.0.0.34.81 Android (34/14; 436dpi; 1080x2400; TECNO; TECNO CK7n; TECNO-CK7n; mt6789; en_US; 1030658339)",
+    "x-fb-conn-uuid-client": "d0790c3b3c4f1c479acadf0e8a526634",
+    "x-fb-http-engine": "Tigon/MNS/TCP",
+}
+
+data = {
+    "params": json.dumps({
+        "client_input_params": {
+            "blocked_uids": [],
+            "aac": "",
+            "sim_phones": [],
+            "aymh_accounts": [
+                {
+                    "profiles": {
+                        "id": {
+                            "is_derived": 0,
+                            "credentials": [],
+                            "account_center_id": "",
+                            "profile_picture_url": "",
+                            "small_profile_picture_url": None,
+                            "notification_count": 0,
+                            "token": "",
+                            "last_access_time": 0,
+                            "has_smartlock": 0,
+                            "credential_type": "none",
+                            "password": "",
+                            "from_accurate_privacy_result": 0,
+                            "dbln_validated": 0,
+                            "user_id": "",
+                            "name": "",
+                            "nta_eligibility_reason": None,
+                            "username": "",
+                            "account_source": "",
+                        },
+                    },
+                    "id": "",
+                },
+            ],
+            "network_bssid": None,
+            "secure_family_device_id": "",
+            "has_granted_read_contacts_permissions": 0,
+            "auth_secure_device_id": "",
+            "has_whatsapp_installed": 1,
+            "password": "#PWD_INSTAGRAM:4:1785682555:AV5q788tBhOhdL9YLL0AATqy+Wvq89aO2QJKCWBX3hlSfYhiMv/uy30iWTNqKEgGO7V88VzqGnSrU67nD4arT7jRlbMOFGn2OUmktp/uC1Ti7cUsFhef4LrA8oO5efFYT2ZUbzcyAG0q3Myijdo2epOu6Q/WXzdwoYtmW8tUlN+i0YcaZpRYcbUIGRmsIibomig6HNWZausKxqpXUafceX4MgLHWg03obsvTAGCSyPruOx9hVUI/e3o3VdRO+S8oKDBNSvt9NVpVJPFnXDtZtVkmVLni48gcUr+EmYwKrFfweXYSgZrTaYWRbHKdOVQqRwhUldWeHnykri5wN4U8XPx3/d9pyScn54U1k5MPAsejwn+T3wkSlZUZOunUnzuKnu9CSci1IO7LwNppcrc=",
+            "sso_token_map_json_string": "",
+            "block_store_machine_id": "",
+            "cloud_trust_token": None,
+            "event_flow": "login_manual",
+            "password_contains_non_ascii": "false",
+            "client_known_key_hash": "",
+            "sso_accounts_auth_data": [],
+            "encrypted_msisdn": "",
+            "has_granted_read_phone_permissions": 0,
+            "app_manager_id": "",
+            "device_id": "android-c53ce29fd4336e4e",
+            "zero_balance_state": "",
+            "login_attempt_count": 1,
+            "machine_id": "am9Z3QABAAFa6Yss9gxhKKuZ_v45",
+            "accounts_list": [],
+            "gms_incoming_call_retriever_eligibility": "client_not_supported",
+            "family_device_id": "e8ea88fd-1ddc-4ea5-8e8b-e63b7e1c8018",
+            "fb_ig_device_id": [],
+            "device_emails": [],
+            "try_num": 1,
+            "lois_settings": {
+                "lois_token": "",
+            },
+            "event_step": "home_page",
+            "headers_infra_flow_id": "",
+            "openid_tokens": {},
+            "contact_point": "x.shajon",
+        },
+        "server_params": {
+            "should_trigger_override_login_2fa_action": 0,
+            "is_from_logged_out": 0,
+            "should_trigger_override_login_success_action": 0,
+            "login_credential_type": "none",
+            "server_login_source": "login",
+            "waterfall_id": None,
+            "two_step_login_type": "one_step_login",
+            "login_source": "Login",
+            "is_platform_login": 0,
+            "INTERNAL__latency_qpl_marker_id": 36707139,
+            "is_from_aymh": 0,
+            "offline_experiment_group": None,
+            "is_from_landing_page": 0,
+            "left_nav_button_action": "NONE",
+            "password_text_input_id": "x9xzsa:57",
+            "is_from_empty_password": 0,
+            "is_from_msplit_fallback": 0,
+            "ar_event_source": "login_home_page",
+            "username_text_input_id": "x9xzsa:56",
+            "layered_homepage_experiment_group": None,
+            "should_show_nested_nta_from_aymh": 1,
+            "device_id": None,
+            "login_surface": "unknown",
+            "INTERNAL__latency_qpl_instance_id": 201208637800242,
+            "reg_flow_source": "login_home_native_integration_point",
+            "is_caa_perf_enabled": 1,
+            "credential_type": "password",
+            "is_from_password_entry_page": 0,
+            "caller": "gslr",
+            "family_device_id": "e8ea88fd-1ddc-4ea5-8e8b-e63b7e1c8018",
+            "is_from_assistive_id": 0,
+            "access_flow_version": "pre_mt_behavior",
+            "is_from_logged_in_switcher": 0,
+        },
+    }, separators=(',', ':')),
+    "bk_client_context": json.dumps({
+        "bloks_version": "125eda3db0a4b040a0be5680724fc52524b62cee3cd34af9164a6a2434c26f39",
+        "styles_id": "instagram",
+    }, separators=(',', ':')),
+    "bloks_versioning_id": "125eda3db0a4b040a0be5680724fc52524b62cee3cd34af9164a6a2434c26f39",
+}
+
+response = requests.post(url, headers=headers, data=data)
+print(f"Response Status Code: {response.status_code}")
+print(f"Response Body: {response.text}")

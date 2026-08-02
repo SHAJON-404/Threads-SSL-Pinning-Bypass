@@ -2,18 +2,18 @@
 📡 Intercept Threads network traffic on Android device
 
 ## 📌 Latest Bypassed and Tested App Details
-- Threads version: **438.0.0.12.88**
-- Edits version: **438.0.0.19.88**
+- Threads version: **441.0.0.31.81**
+- Edits version: **441.0.0.34.81**
 - Architecture: **arm64-v8a, armeabi-v7a, x86, x86_64**
 - Tools Used for test: [Mitmproxy](https://mitmproxy.org/), [Reqable](https://reqable.com/).
 - For any inquiries, please contact me on Telegram [https://t.me/SHAJON](https://t.me/SHAJON)
 
 ## 🎥 Evidence
 - **Threads:**
-![Threads Android](assets/v438.jpg)
+![Threads Android](assets/v441.jpg)
 
 - **Edits:**
-![Edits Android](assets/v438_edits.jpg)
+![Edits Android](assets/v441_edits.jpg)
 
 ## ✅ Other Apps
 1. [Threads iOS](https://github.com/shajon-dev/iOS-Threads-SSL-Pinning-Bypass)
@@ -24,6 +24,8 @@
 6. [Instagram Android](https://github.com/shajon-dev/Instagram-SSL-Pinning-Bypass)
 7. [Instagram iOS](https://github.com/shajon-dev/iOS-Instagram-SSL-Pinning-Bypass)
 8. [Business Suite Android](https://github.com/shajon-dev/Meta-Business-Suit-SSL-Pinning-Bypass)
+9. [Business Suite iOS](https://github.com/shajon-dev/iOS-Meta-Business-Suit-SSL-Pinning-Bypass)
+10. [TikTok iOS](https://github.com/shajon-dev/iOS-TikTok-SSL-Pinning-Bypass)
 
 ## 📦 For Demo - Download Official APKs
   - For any issues, contact me on Telegram. Read README.md carefully before use.
@@ -47,7 +49,7 @@
     <tr>
       <td rowspan="2" align="center"><b>Threads</b></td>
       <td rowspan="2" align="center"><code>com.instagram.barcelona</code></td>
-      <td align="center">438.0.0.12.88</td>
+      <td align="center">441.0.0.31.81</td>
       <td align="center">✅ Bypassed</td>
       <td align="center">No</td>
       <td colspan="2" align="center"><a href="https://t.me/SHAJON">Contact Telegram</a></td>
@@ -62,7 +64,7 @@
     <tr>
       <td rowspan="2" align="center"><b>Edits</b></td>
       <td rowspan="2" align="center"><code>com.instagram.basel</code></td>
-      <td align="center">438.0.0.19.88</td>
+      <td align="center">441.0.0.34.81</td>
       <td align="center">✅ Bypassed</td>
       <td align="center">No</td>
       <td colspan="2" align="center"><a href="https://t.me/SHAJON">Contact Telegram</a></td>
