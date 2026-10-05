@@ -10,9 +10,9 @@
 ---
 
 ## 📌 Latest Bypassed and Tested App Details
-- Threads version: **445.0.0.46.83**
-- Edits version: **445.0.0.46.83**
-- Instants version: **445.0.0.46.107**
+- Threads version: **450.0.0.38.78**
+- Edits version: **450.0.0.46.78**
+- Instants version: **449.0.0.53.106**
 - Architecture: **arm64-v8a, armeabi-v7a, x86, x86_64**
 - Tools Used for test: [Mitmproxy](https://mitmproxy.org/), [Reqable](https://reqable.com/).
 - For any inquiries, please contact me on Telegram [https://t.me/SHAJON](https://t.me/SHAJON)
@@ -21,13 +21,13 @@
 
 ## 🎥 Evidence
 - **Threads:**
-![Threads Android](assets/v445.jpg)
+![Threads Android](assets/v450.jpg)
 
 - **Edits:**
-![Edits Android](assets/v445_edits.jpg)
+![Edits Android](assets/v450_edits.jpg)
 
 - **Instants, an Instagram app:**
-![Instants, an Instagram app](assets/v445_instants.jpg)
+![Instants, an Instagram app](assets/v449_instants.jpg)
 
 ---
 
@@ -70,7 +70,7 @@
     <tr>
       <td rowspan="3" align="center"><b>Threads</b></td>
       <td rowspan="3" align="center"><code>com.instagram.barcelona</code></td>
-      <td align="center">445.0.0.46.83</td>
+      <td align="center">450.0.0.38.78</td>
       <td align="center">✅ Bypassed</td>
       <td align="center">✅ Yes</td>
       <td colspan="4" align="center"><a href="https://t.me/SHAJON">Contact Telegram</a></td>
@@ -90,7 +90,7 @@
     <tr>
       <td rowspan="3" align="center"><b>Edits</b></td>
       <td rowspan="3" align="center"><code>com.instagram.basel</code></td>
-      <td align="center">445.0.0.46.83</td>
+      <td align="center">450.0.0.46.78</td>
       <td align="center">✅ Bypassed</td>
       <td align="center">✅ Yes</td>
       <td colspan="4" align="center"><a href="https://t.me/SHAJON">Contact Telegram</a></td>
@@ -110,7 +110,7 @@
     <tr>
       <td rowspan="2" align="center"><b>Instants</b></td>
       <td rowspan="2" align="center"><code>com.instagram.moonshot</code></td>
-      <td align="center">445.0.0.46.107</td>
+      <td align="center">449.0.0.53.106</td>
       <td align="center">✅ Bypassed</td>
       <td align="center">✅ Yes</td>
       <td colspan="4" align="center"><a href="https://t.me/SHAJON">Contact Telegram</a></td>
